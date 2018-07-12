@@ -10,7 +10,7 @@ module.exports = {
     entry: "./src/index.js",
     output: {
         path: path.resolve(__dirname),
-        filename: "bundle.js",
+        filename: "assets/bundle.js",
     },
     module: {
         rules: [{
@@ -31,8 +31,8 @@ module.exports = {
             {
                 test: /\.(jpe?g|png|gif|svg)$/i,
                 use: [
-                  'url-loader?limit=10000',
-                  'img-loader'
+                  'url-loader?limit=10000&name=assets/[name].[ext]',
+                  'img-loader?name=assets/[name].[ext]'
                 ]
             }
         ],

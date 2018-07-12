@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Introduction To Redux</title>
+    <meta charset="utf-8">
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+  </head>
+  <body>
+    <textarea id="source">
+
+    class: center, middle, inverse
+
+    # TMT: Introduction To Redux
+    ## Ryan McAfee 
+    ### 07/13/18
+
+    ---
+
+    # What is Redux?
+
+    * Redux is a front-end library for handling client-side application state in a centralized manner.
+
+    * Immutable, centralized state management for web applications/ js applications.
+
+    * Created by Dan Abramov around June 2015.
+
+    * Inspired by Facebook's Flux (multiple stores) and the functional programming language Elm.
+
+    * Front-end framework agnostic – can be used with Angular, React, Vue Js, etc..
+
+    ---
+
+    # Why Redux? Motivation
+
+    * Deterministic state management – same state always renders same view (pure functions – functional programming).
+
+    * User workflows are complex
+
+    * You have a multi-page application that needs to use shared data throughout the application. Update the data in a single place and subscribe to the store throughout the application.
+
+    * You are using web sockets, Server-Side Events or an event driven architecture – Useful in collaborative apps
+
+    * You want to have a "single source of truth" for your application to simplify things.
+
+    * Having a single state store allows for easy serialization of the application state and resuming the state at a later time. (redux-persist)
+
+    * Ease of debugging and development (Redux DevTools).
+
+    * Extensibility through custom middleware (Side Effects)
+
+    * You want to track ui events in your application, log the events, and visualize the results to see how users are using your application.
+
+    * Ability to replay front-end events and reconstruct a user’s application session. Associate individual front-end events with backend events. Gives you the ability to play a “video” of your user using the application https://logrocket.com/. 
+    
+    ---
+
+    # Redux Lifecycle
+
+    <img src="/public/assets/ReduxAnimation.gif" alt="Redux Lifecycle" width="auto" height="500">
+
+    ---
+
+    #Core Concepts
+
+    * Store – Manager that keeps state in memory, exposes dispatcher api for sending actions to store and has a subscribe/unsubscribe api for listening to events/ state updates.
+
+    * Reducer – A function that is responsible for updating the application state. Ties actions and state together. Of the form: (state, action) => New State;
+
+    * Action – A js object that has a type and other optional fields.
+
+    * State – A plain js object that stores your application state in the form of key -> value pairs.
+
+    ---
+
+    #Redux Data Flow
+
+    * Redux architecture revolves around a strict unidirectional data flow
+
+    * Inspired by Flux, CQRS, and Event Sourcing
+
+
+    ---
+
+    #Redux Debugging (Redux DevTools)
+
+    * <img src="/public/assets/ReduxDevTools.gif" alt="Redux DevTools" width="auto" height="500">
+
+
+    </textarea>
+  <script type="text/javascript" src="bundle.js"></script></body>
+</html>

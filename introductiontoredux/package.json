@@ -1,0 +1,48 @@
+{
+  "name": "@ryanmcafee/introductiontoredux",
+  "version": "1.0.0",
+  "description": "Ten Minute Presentation at App River on a introduction to redux state management for front-end applications.",
+  "main": "index.html",
+  "scripts": {
+    "start": "webpack-dev-server --config webpack.config.js --hot --inline --mode development",
+    "build": "webpack --config webpack.config.js --mode production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryanmcafee/introductiontoredux.git"
+  },
+  "keywords": [
+    "Redux",
+    "Slides",
+    "IntroToRedux"
+  ],
+  "author": "Ryan McAfee",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ryanmcafee/introductiontoredux/issues"
+  },
+  "homepage": "https://github.com/ryanmcafee/introductiontoredux#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.19",
+    "css-loader": "^1.0.0",
+    "file-loader": "^1.1.11",
+    "handlebars": "^4.0.11",
+    "handlebars-loader": "^1.7.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "img-loader": "^3.0.0",
+    "markdown-loader": "^3.0.0",
+    "raw-loader": "^0.5.1",
+    "style-loader": "^0.21.0",
+    "url-loader": "^1.0.1",
+    "webpack": "^4.16.0",
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^3.1.4"
+  },
+  "dependencies": {}
+}

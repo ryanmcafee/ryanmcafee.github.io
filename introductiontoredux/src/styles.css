@@ -32,3 +32,19 @@ textarea {
   color: white;
   font-size: 1rem;
 }
+.remark-inline-code {
+  width: auto;
+  background-color: #fff;
+  word-wrap: break-word;
+  color: black;
+  font-size: 12px;
+  padding: 5px;
+}
+
+.remark-code-line {
+  width: auto;
+  background-color: #fff;
+  word-wrap: break-word;
+  color: black;
+  font-size: 12px;
+}
